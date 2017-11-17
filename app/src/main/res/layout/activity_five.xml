@@ -30,16 +30,15 @@
             android:layout_below="@+id/topBar"
             android:layout_above="@+id/bottomBar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent" >
 
-            <TextView
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_far"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
-                android:text="PERFIL"
-                android:textAlignment="center"
-                android:textSize="30sp" />
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
 
         </RelativeLayout>
 
