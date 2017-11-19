@@ -14,35 +14,18 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/topBar">
-
-            <android.support.design.widget.AppBarLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-
-            </android.support.design.widget.AppBarLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
             android:layout_below="@+id/topBar"
             android:layout_above="@+id/bottomBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
 
-            <TextView
-                android:id="@+id/activityTitle1"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_noti"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
-                android:text="PANTALLA DONDE IRAN LAS CITAS "
-                android:textAlignment="center"
-                android:textSize="30sp" />
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
 
         </RelativeLayout>
 
