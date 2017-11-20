@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jquirogl.appclinicaproject.FourActivity">
+    tools:context="com.jquirogl.appclinicaproject.SixActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!--<RelativeLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/topBar">
@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </android.support.design.widget.AppBarLayout>
-        </RelativeLayout>-->
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_below="@+id/topBar"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_four"
+                android:id="@+id/recycler_six"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </android.support.v7.widget.RecyclerView>
@@ -52,4 +52,3 @@
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
-

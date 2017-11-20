@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jquirogl.appclinicaproject.DetalleNumeroActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvNombreHistorial"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Centro odontologico" />
+
+            <TextView
+                android:id="@+id/tvFechaHistorial"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="24-07-2014" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Atendió:" />
+
+            <TextView
+                android:id="@+id/tvNombreDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+
+                android:maxLines="1"
+                android:text="Dr.Armando Paredes" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="Resumen de la atención:" />
+
+            <TextView
+
+                android:id="@+id/tvResumenAtencion"
+                android:textAlignment="center"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="- Curacion de los dos dientes \n molares con limpieza de fluor." />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Receta médica:" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="-Ibuprofeno 500mg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="-Amoxicilina 5mg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:text="-Jarabe monodinflante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Costo total:" />
+
+            <TextView
+                android:id="@+id/tvCostoTotal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="S/.389.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Boleta Nro:" />
+
+            <TextView
+                android:id="@+id/tvNumeroBoleta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="154885" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Método de pago" />
+
+            <TextView
+                android:id="@+id/tvMetodoPago"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Tarjeta de credito-Visa" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bottomBar"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/white_grey_border_top"
+                app:menu="@menu/navigation" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

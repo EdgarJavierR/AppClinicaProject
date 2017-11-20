@@ -3,6 +3,9 @@
     package="com.jquirogl.appclinicaproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -25,7 +28,18 @@
         <activity android:name=".ThreeActivity" />
         <activity android:name=".FiveActivity" />
         <activity android:name=".DetalleFiveActivity" />
-        <activity android:name=".DetalleNoticiasActivity"></activity>
+        <activity android:name=".DetalleNoticiasActivity" />
+        <activity android:name=".AlarmaActivity" />
+        <activity android:name=".DetalleNumeroActivity" />
+        <activity android:name=".DetalleThreeActivity" />
+        <activity android:name=".SixActivity"></activity>
+
+        <receiver android:name=".alarma.AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

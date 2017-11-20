@@ -8,4 +8,16 @@
     <color name="colorGrey">#c3c3c3 </color>
     <!-- colorContraste será el color del background de la actividad principal-->
     <color name="colorContraste">#EDEDED</color>
+
+    <color name="textcolorHeader">#069ECF</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#A5A5A5</color>
+
+    <!--color de cambiado-->
+
+    <color name="thumb_active">#069ECF</color>
+    <color name="track_active">#66069ECF</color>
+
+    <color name="thumb_inactive">#A5A5A5</color>
+    <color name="track_inactive">#66A5A5A5</color>
 </resources>

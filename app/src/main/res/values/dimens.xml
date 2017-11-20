@@ -7,4 +7,13 @@
 
     <dimen name="margen_superior_lista">8dp</dimen>
     <dimen name="altura_imagen_item">192dp</dimen>
+
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="large_text">16sp</dimen>
+
+    <dimen name="items_inbetween_space">8dp</dimen>
+    <dimen name="items_top_padding">4dp</dimen>
+
+    <dimen name="timer_icon">20dp</dimen>
 </resources>
