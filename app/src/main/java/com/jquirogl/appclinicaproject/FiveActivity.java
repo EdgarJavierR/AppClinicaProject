@@ -89,36 +89,36 @@ public class FiveActivity extends AppCompatActivity implements SearchView.OnQuer
     }
 
     private void listadoFarmacia(){
-        listaFarmacia.add(new FarmaciaBean(1,"Paracetamol 500mg","Pastillas",50,5.0));
-        listaFarmacia.add(new FarmaciaBean(2,"Aspirina 500mg","Pastillas",10,3.0));
-        listaFarmacia.add(new FarmaciaBean(3,"Ibuprofeno 500mg","Pastillas",20,2.0));
-        listaFarmacia.add(new FarmaciaBean(4,"Apronax 500mg","Pastillas",50,6.0));
-        listaFarmacia.add(new FarmaciaBean(5,"Amoxicilina 500mg","Pastillas",40,6.0));
-        listaFarmacia.add(new FarmaciaBean(6,"Paltomiel","Jarabe",50,5.0));
-        listaFarmacia.add(new FarmaciaBean(7,"Aspirina FORTE","Pastillas",10,3.0));
-        listaFarmacia.add(new FarmaciaBean(8,"Ibuprofeno 500mg","Pastillas",20,2.0));
-        listaFarmacia.add(new FarmaciaBean(9,"Dalsy","Jarabe",50,6.0));
-        listaFarmacia.add(new FarmaciaBean(10,"Dexametasona 500mg","Pastillas",40,6.0));
-        listaFarmacia.add(new FarmaciaBean(11,"Ampicilina 1m","Inyectable",50,5.0));
-        listaFarmacia.add(new FarmaciaBean(12,"Bismutol","Pastillas",10,3.0));
-        listaFarmacia.add(new FarmaciaBean(13,"Bismutol","Jarabe",20,2.0));
-        listaFarmacia.add(new FarmaciaBean(14,"Viagra 25mg","Pastillas",50,6.0));
-        listaFarmacia.add(new FarmaciaBean(15,"Panadol 500mg","Pastillas",40,6.0));
-        listaFarmacia.add(new FarmaciaBean(16,"Abrilar","Jarabe",50,5.0));
-        listaFarmacia.add(new FarmaciaBean(17,"Tioctan Plus 500mg","Pastillas",10,3.0));
-        listaFarmacia.add(new FarmaciaBean(18,"Ibuprofeno","Jarabe",20,2.0));
-        listaFarmacia.add(new FarmaciaBean(19,"Gripadex","Jarabe",50,6.0));
-        listaFarmacia.add(new FarmaciaBean(20,"Doloflam 100mg","Pastillas",40,6.0));
-        listaFarmacia.add(new FarmaciaBean(21,"Tempra","Inyectable",50,5.0));
-        listaFarmacia.add(new FarmaciaBean(22,"Kitadol","Jarabe",10,3.0));
-        listaFarmacia.add(new FarmaciaBean(23,"Panadol Niños","Jarabe",20,2.0));
-        listaFarmacia.add(new FarmaciaBean(24,"Sinutab","Pastillas",50,6.0));
-        listaFarmacia.add(new FarmaciaBean(25,"Amidol","Jarabe",40,6.0));
-        listaFarmacia.add(new FarmaciaBean(26,"Paracetamol","Jarabe",50,5.0));
-        listaFarmacia.add(new FarmaciaBean(27,"Formula 44","Jarabe",10,3.0));
-        listaFarmacia.add(new FarmaciaBean(28,"Penicilina 500mg","Inyectable",20,2.0));
-        listaFarmacia.add(new FarmaciaBean(29,"Sinachis","Pastillas",50,6.0));
-        listaFarmacia.add(new FarmaciaBean(30,"Hepabionta","Pastillas",40,6.0));
+        listaFarmacia.add(new FarmaciaBean(1,"Paracetamol 500mg","Pastillas","Laboratorios Peru",50,5.0));
+        listaFarmacia.add(new FarmaciaBean(2,"Aspirina 500mg","Pastillas","Bayer",10,3.0));
+        listaFarmacia.add(new FarmaciaBean(3,"Ibuprofeno 500mg","Pastillas","Laboratorios Peru",20,2.0));
+        listaFarmacia.add(new FarmaciaBean(4,"Apronax 500mg","Pastillas","Bayer",50,6.0));
+        listaFarmacia.add(new FarmaciaBean(5,"Amoxicilina 500mg","Pastillas","PME",40,6.0));
+        listaFarmacia.add(new FarmaciaBean(6,"Paltomiel","Jarabe","MEDCO",50,5.0));
+        listaFarmacia.add(new FarmaciaBean(7,"Aspirina FORTE","Pastillas","Bayer",10,3.0));
+        listaFarmacia.add(new FarmaciaBean(8,"Ibuprofeno 500mg","Pastillas","Farmacaps",20,2.0));
+        listaFarmacia.add(new FarmaciaBean(9,"Dalsy","Jarabe","Abbot",50,6.0));
+        listaFarmacia.add(new FarmaciaBean(10,"Dexametasona 500mg","Pastillas","Laboratorios Peru",40,6.0));
+        listaFarmacia.add(new FarmaciaBean(11,"Ampicilina 1m","Inyectable","Laboratorios Peru",50,5.0));
+        listaFarmacia.add(new FarmaciaBean(12,"Bismutol","Pastillas","ELMOR",10,3.0));
+        listaFarmacia.add(new FarmaciaBean(13,"Bismutol","Jarabe","ELMOR",20,2.0));
+        listaFarmacia.add(new FarmaciaBean(14,"Viagra 25mg","Pastillas","pfizer",50,6.0));
+        listaFarmacia.add(new FarmaciaBean(15,"Panadol 500mg","Pastillas","GFK",40,6.0));
+        listaFarmacia.add(new FarmaciaBean(16,"Abrilar","Jarabe","Medilab",50,5.0));
+        listaFarmacia.add(new FarmaciaBean(17,"Tioctan Plus 500mg","Pastillas","Farmindustria",10,3.0));
+        listaFarmacia.add(new FarmaciaBean(18,"Ibuprofeno","Jarabe","Medilab",20,2.0));
+        listaFarmacia.add(new FarmaciaBean(19,"Gripadex","Jarabe","Medilab",50,6.0));
+        listaFarmacia.add(new FarmaciaBean(20,"Doloflam 100mg","Pastillas","Medilab",40,6.0));
+        listaFarmacia.add(new FarmaciaBean(21,"Tempra","Inyectable","Medilab",50,5.0));
+        listaFarmacia.add(new FarmaciaBean(22,"Kitadol","Jarabe","Medilab",10,3.0));
+        listaFarmacia.add(new FarmaciaBean(23,"Panadol Niños","Jarabe","GFK",20,2.0));
+        listaFarmacia.add(new FarmaciaBean(24,"Sinutab","Pastillas","GFK",50,6.0));
+        listaFarmacia.add(new FarmaciaBean(25,"Amidol","Jarabe","Medilab",40,6.0));
+        listaFarmacia.add(new FarmaciaBean(26,"Paracetamol","Jarabe","SANS",50,5.0));
+        listaFarmacia.add(new FarmaciaBean(27,"Formula 44","Jarabe","Vick",10,3.0));
+        listaFarmacia.add(new FarmaciaBean(28,"Penicilina 500mg","Inyectable","Medilab",20,2.0));
+        listaFarmacia.add(new FarmaciaBean(29,"Sinachis","Pastillas","Contlab",50,6.0));
+        listaFarmacia.add(new FarmaciaBean(30,"Hepabionta","Pastillas","Medilab",40,6.0));
     }
 
     @Override

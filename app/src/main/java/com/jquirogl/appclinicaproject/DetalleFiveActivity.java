@@ -47,7 +47,7 @@ public class DetalleFiveActivity extends AppCompatActivity {
     };
 
 
-    TextView txtNom, txtTip, txtSto, txtPre;
+    TextView txtNom, txtTip, txtLab ,txtSto, txtPre;
     ImageView imgFarma;
 
     @Override
@@ -66,6 +66,7 @@ public class DetalleFiveActivity extends AppCompatActivity {
         imgFarma = (ImageView) findViewById(R.id.img_foto);
         txtNom = (TextView) findViewById(R.id.txt_nombre);
         txtTip = (TextView) findViewById(R.id.txt_tipo);
+        txtLab = (TextView) findViewById(R.id.txt_labo);
         txtSto = (TextView) findViewById(R.id.txt_stock);
         txtPre = (TextView) findViewById(R.id.txt_precio);
 
@@ -76,6 +77,7 @@ public class DetalleFiveActivity extends AppCompatActivity {
         imgFarma.setImageResource(resID);
         txtNom.setText(getIntent().getStringExtra("txtNom"));
         txtTip.setText(getIntent().getStringExtra("txtTip"));
+        txtLab.setText("Laboratorio: " + getIntent().getStringExtra("txtLab"));
         txtSto.setText("Stock: " + getIntent().getStringExtra("txtSto"));
         txtPre.setText("Precio: S/ " + getIntent().getStringExtra("txtPre"));
 

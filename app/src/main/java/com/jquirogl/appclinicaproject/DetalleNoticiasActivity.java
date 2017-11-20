@@ -48,7 +48,7 @@ public class DetalleNoticiasActivity extends AppCompatActivity {
     };
 
     ImageView imgFotoN;
-    TextView txtFechaN, txtHoraN, txtConteN, txtUbicaN;
+    TextView txtFechaN, txtHoraN, txtTituloN, txtConteN, txtUbicaN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +67,7 @@ public class DetalleNoticiasActivity extends AppCompatActivity {
         imgFotoN = (ImageView) findViewById(R.id.img_foto_n);
         txtFechaN = (TextView) findViewById(R.id.txt_fecha_n);
         txtHoraN = (TextView) findViewById(R.id.txt_hora_n);
+        txtTituloN = (TextView) findViewById(R.id.txt_titulo_n);
         txtConteN = (TextView) findViewById(R.id.txt_conte_n);
         txtUbicaN = (TextView) findViewById(R.id.txt_ubica_n);
 
@@ -75,6 +76,7 @@ public class DetalleNoticiasActivity extends AppCompatActivity {
         imgFotoN.setImageResource(resID);
         txtFechaN.setText(getIntent().getStringExtra("txtFechaN"));
         txtHoraN.setText(getIntent().getStringExtra("txtHoraN"));
+        txtTituloN.setText(getIntent().getStringExtra("txtTituloN"));
         txtConteN.setText(getIntent().getStringExtra("txtConteN"));
         txtUbicaN.setText("Ubicación: " + getIntent().getStringExtra("txtUbicaN"));
 

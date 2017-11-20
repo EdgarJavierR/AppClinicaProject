@@ -50,7 +50,7 @@ public class NoticiasAdapter extends RecyclerView.Adapter<NoticiasAdapter.Notici
 
         holder.imgFoto.setImageResource(resId[position]);
         holder.txtItemN1.setText(listaNoticias.get(position).getFecha_noti());
-        holder.txtItemN2.setText(listaNoticias.get(position).getContenido_noti());
+        holder.txtItemN2.setText(listaNoticias.get(position).getTitulo_noti());
     }
 
     @Override
@@ -86,6 +86,7 @@ public class NoticiasAdapter extends RecyclerView.Adapter<NoticiasAdapter.Notici
             NoticiasBean noticias = this.lista.get(position);
             Intent intent = new Intent(this.ctx, DetalleNoticiasActivity.class);
             intent.putExtra("imgFotoN", noticias.getFoto_noti());
+            intent.putExtra("txtTituloN", noticias.getTitulo_noti());
             intent.putExtra("txtConteN", noticias.getContenido_noti());
             intent.putExtra("txtFechaN", noticias.getFecha_noti());
             intent.putExtra("txtHoraN", noticias.getHora_noti());

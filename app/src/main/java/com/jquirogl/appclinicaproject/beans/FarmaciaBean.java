@@ -11,16 +11,18 @@ public class FarmaciaBean implements Serializable {
     private int codigo_farma;
     private String nombre_farma;
     private String tipo_farma;
+    private String labo_farma;
     private Integer stock_farma;
     private Double precio_farma;
 
     public FarmaciaBean() {
     }
 
-    public FarmaciaBean(int codigo_farma, String nombre_farma, String tipo_farma, Integer stock_farma, Double precio_farma) {
+    public FarmaciaBean(int codigo_farma, String nombre_farma, String tipo_farma, String labo_farma, Integer stock_farma, Double precio_farma) {
         this.codigo_farma = codigo_farma;
         this.nombre_farma = nombre_farma;
         this.tipo_farma = tipo_farma;
+        this.labo_farma = labo_farma;
         this.stock_farma = stock_farma;
         this.precio_farma = precio_farma;
     }
@@ -47,6 +49,14 @@ public class FarmaciaBean implements Serializable {
 
     public void setTipo_farma(String tipo_farma) {
         this.tipo_farma = tipo_farma;
+    }
+
+    public String getLabo_farma() {
+        return labo_farma;
+    }
+
+    public void setLabo_farma(String labo_farma) {
+        this.labo_farma = labo_farma;
     }
 
     public Integer getStock_farma() {

@@ -82,6 +82,7 @@ public class FarmaciaAdapter extends RecyclerView.Adapter<FarmaciaAdapter.Farmac
             intent.putExtra("imgFoto", farmacia.getCodigo_farma());
             intent.putExtra("txtNom", farmacia.getNombre_farma());
             intent.putExtra("txtTip", farmacia.getTipo_farma());
+            intent.putExtra("txtLab", farmacia.getLabo_farma());
             intent.putExtra("txtSto", farmacia.getStock_farma().toString());
             intent.putExtra("txtPre", farmacia.getPrecio_farma().toString());
             this.ctx.startActivity(intent);

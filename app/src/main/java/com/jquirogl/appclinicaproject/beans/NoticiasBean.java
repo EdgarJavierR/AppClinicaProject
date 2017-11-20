@@ -9,6 +9,7 @@ import java.io.Serializable;
 public class NoticiasBean implements Serializable {
 
     private int codigo_noti;
+    private String titulo_noti;
     private String contenido_noti;
     private String foto_noti;
     private String fecha_noti;
@@ -18,8 +19,9 @@ public class NoticiasBean implements Serializable {
     public NoticiasBean() {
     }
 
-    public NoticiasBean(int codigo_noti, String contenido_noti, String foto_noti, String fecha_noti, String hora_noti, String ubica_noti) {
+    public NoticiasBean(int codigo_noti, String titulo_noti, String contenido_noti, String foto_noti, String fecha_noti, String hora_noti, String ubica_noti) {
         this.codigo_noti = codigo_noti;
+        this.titulo_noti = titulo_noti;
         this.contenido_noti = contenido_noti;
         this.foto_noti = foto_noti;
         this.fecha_noti = fecha_noti;
@@ -33,6 +35,14 @@ public class NoticiasBean implements Serializable {
 
     public void setCodigo_noti(int codigo_noti) {
         this.codigo_noti = codigo_noti;
+    }
+
+    public String getTitulo_noti() {
+        return titulo_noti;
+    }
+
+    public void setTitulo_noti(String titulo_noti) {
+        this.titulo_noti = titulo_noti;
     }
 
     public String getContenido_noti() {
