@@ -78,7 +78,7 @@ public class DetalleNoticiasActivity extends AppCompatActivity {
         txtHoraN.setText(getIntent().getStringExtra("txtHoraN"));
         txtTituloN.setText(getIntent().getStringExtra("txtTituloN"));
         txtConteN.setText(getIntent().getStringExtra("txtConteN"));
-        txtUbicaN.setText("Ubicación: " + getIntent().getStringExtra("txtUbicaN"));
+        txtUbicaN.setText(getIntent().getStringExtra("txtUbicaN"));
 
     }
 }

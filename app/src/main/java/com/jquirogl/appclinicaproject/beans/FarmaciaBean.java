@@ -75,4 +75,12 @@ public class FarmaciaBean implements Serializable {
         this.precio_farma = precio_farma;
     }
 
+    public String getDisponibilidad(Integer stock_farma) {
+        String dispo = "";
+        if (stock_farma > 20) dispo = "DISPONIBLE";
+        else if (stock_farma > 1) dispo = "LIMITADO";
+        else dispo = "AGOTADO";
+        return  dispo;
+    }
+
 }

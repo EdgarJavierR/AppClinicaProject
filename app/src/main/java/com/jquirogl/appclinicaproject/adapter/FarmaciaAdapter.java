@@ -2,10 +2,12 @@ package com.jquirogl.appclinicaproject.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jquirogl.appclinicaproject.DetalleFiveActivity;
@@ -39,8 +41,16 @@ public class FarmaciaAdapter extends RecyclerView.Adapter<FarmaciaAdapter.Farmac
 
     @Override
     public void onBindViewHolder(FarmaciaViewHolder holder, int position) {
+        android.content.res.Resources getResources = null;
+        android.support.v7.app.AppCompatActivity app = new AppCompatActivity();
+
         holder.txtItem1.setText(listaFarmacia.get(position).getNombre_farma());
-        holder.txtItem2.setText(listaFarmacia.get(position).getPrecio_farma().toString());
+        holder.txtItem2.setText("S/ " + listaFarmacia.get(position).getPrecio_farma().toString());
+        Integer dispo = listaFarmacia.get(position).getStock_farma();
+        holder.txtItem3.setText(listaFarmacia.get(position).getDisponibilidad(dispo));
+
+        if (listaFarmacia.get(position).getStock_farma() > 25)  holder.imgSto.setImageResource(R.drawable.estrella);
+        else holder.imgSto.setImageResource(0);
     }
 
     @Override
@@ -61,7 +71,8 @@ public class FarmaciaAdapter extends RecyclerView.Adapter<FarmaciaAdapter.Farmac
 
     public class FarmaciaViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView txtItem1, txtItem2;
+        ImageView imgSto;
+        TextView txtItem1, txtItem2, txtItem3;
         ArrayList<FarmaciaBean> lista = new ArrayList<>();
         Context ctx;
 
@@ -70,8 +81,10 @@ public class FarmaciaAdapter extends RecyclerView.Adapter<FarmaciaAdapter.Farmac
             this.lista = lista;
             this.ctx = ctx;
             itemView.setOnClickListener(this);
+            imgSto = (ImageView) itemView.findViewById(R.id.img_sto);
             txtItem1 = (TextView) itemView.findViewById(R.id.txt_item_1);
             txtItem2 = (TextView) itemView.findViewById(R.id.txt_item_2);
+            txtItem3 = (TextView) itemView.findViewById(R.id.txt_item_3);
         }
 
         @Override

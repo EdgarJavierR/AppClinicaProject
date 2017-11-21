@@ -77,9 +77,9 @@ public class DetalleFiveActivity extends AppCompatActivity {
         imgFarma.setImageResource(resID);
         txtNom.setText(getIntent().getStringExtra("txtNom"));
         txtTip.setText(getIntent().getStringExtra("txtTip"));
-        txtLab.setText("Laboratorio: " + getIntent().getStringExtra("txtLab"));
-        txtSto.setText("Stock: " + getIntent().getStringExtra("txtSto"));
-        txtPre.setText("Precio: S/ " + getIntent().getStringExtra("txtPre"));
+        txtLab.setText(getIntent().getStringExtra("txtLab"));
+        txtSto.setText(getIntent().getStringExtra("txtSto"));
+        txtPre.setText(getIntent().getStringExtra("txtPre"));
 
     }
 }

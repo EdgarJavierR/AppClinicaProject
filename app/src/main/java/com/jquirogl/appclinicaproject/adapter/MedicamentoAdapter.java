@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jquirogl.appclinicaproject.DetalleThreeActivity;
@@ -27,7 +28,7 @@ public class MedicamentoAdapter extends RecyclerView.Adapter<MedicamentoAdapter.
 
     @Override
     public MedicamentoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, null, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_m, null, false);
         v.setOnClickListener(this);
         MedicamentoViewHolder medicamentoViewHolder = new MedicamentoViewHolder(v, ctx, listaMedicamento);
         return medicamentoViewHolder;
@@ -35,6 +36,7 @@ public class MedicamentoAdapter extends RecyclerView.Adapter<MedicamentoAdapter.
 
     @Override
     public void onBindViewHolder(MedicamentoViewHolder holder, int position) {
+        holder.imgRel.setImageResource(R.drawable.ic_timer);
         holder.txtItem1.setText(listaMedicamento.get(position).getNombre_farma());
         holder.txtItem2.setText(listaMedicamento.get(position).getStock_farma().toString());
     }
@@ -52,6 +54,7 @@ public class MedicamentoAdapter extends RecyclerView.Adapter<MedicamentoAdapter.
     public class MedicamentoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView txtItem1, txtItem2;
+        ImageView imgRel;
         ArrayList<FarmaciaBean> lista = new ArrayList<>();
         Context ctx;
 
@@ -60,6 +63,7 @@ public class MedicamentoAdapter extends RecyclerView.Adapter<MedicamentoAdapter.
             this.lista = lista;
             this.ctx = ctx;
             itemView.setOnClickListener(this);
+            imgRel = (ImageView) itemView.findViewById(R.id.img_rel);
             txtItem1 = (TextView) itemView.findViewById(R.id.txt_item_1);
             txtItem2 = (TextView) itemView.findViewById(R.id.txt_item_2);
         }
